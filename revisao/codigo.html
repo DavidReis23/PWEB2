@@ -1,0 +1,169 @@
+<!-- Questão 22-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questão 22</title>
+    <script src="codigo.js" defer></script> <!-- O js está no arquivo codigo.js -->
+</head>
+
+<body>
+    <h1>Cadastro de Produtos</h1>
+
+    <form id="form-cadastro">
+        <label>
+            <span>Nome:</span>
+            <input type="text" id="nome" />
+        </label>
+
+        <label>
+            <span>Preço:</span>
+            <input type="number" id="preco" />
+        </label>
+
+        <label>
+            <span>Categoria:</span>
+            <input type="text" id="categoria" />
+        </label>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <div id="erros"></div>
+</body>
+
+</html>
+
+<!-- Questão 23-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="codigo.js" defer></script> <!-- O js está no arquivo codigo.js -->
+    <title>Q23 - Lista de Filmes (Event Delegation)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background: #f0f0f0;
+            margin: 5px 0;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+        }
+
+        .btn-remover {
+            background: #ff4d4d;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+
+        .filtro-container {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Meus Filmes Favoritos</h2>
+
+    <div>
+        <input type="text" id="filmeInput" placeholder="Nome do filme">
+        <button id="addBtn">Adicionar</button>
+    </div>
+
+    <div class="filtro-container">
+        <input type="text" id="filtroInput" placeholder="Filtrar filmes...">
+    </div>
+
+    <ul id="listaFilmes"></ul>
+
+</body>
+
+</html>
+
+<!-- Questão 24-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="codigo.js" defer></script> <!-- O js está no arquivo codigo.js -->
+    <title>Q24 - Vendas Funcional</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            max-width: 400px;
+        }
+
+        #totalGeral {
+            margin-top: 15px;
+            font-size: 1.5em;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #219150;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h3>Dados de Vendas (JSON)</h3>
+        <pre>
+[
+  { "produto": "Notebook", "preco": 3500, "status": "pago" },
+  { "produto": "Mouse",    "preco": 50,   "status": "pendente" },
+  { "produto": "Teclado",  "preco": 150,  "status": "pago" },
+  { "produto": "Monitor",  "preco": 1200, "status": "pago" },
+  { "produto": "Webcam",   "preco": 80,   "status": "pendente" }
+]
+        </pre>
+    </div>
+
+    <button id="calcularReceitaTotal">Calcular Receita Total</button>
+
+    <div id="totalGeral"></div>
+
+</body>
+
+</html>
