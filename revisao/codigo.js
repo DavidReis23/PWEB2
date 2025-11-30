@@ -46,7 +46,7 @@ document.querySelector('#formLogin').addEventListener('submit', (e) => {
 const pedidos = [
   { cliente: "A", total: 100 },
   { cliente: "B", total: 200 },
-  { cliente: "A", total: 50  },
+  { cliente: "A", total: 50  }, 
   { cliente: "C", total: 350 }
 ];
 
@@ -57,7 +57,7 @@ const somaTotal = pedidos.reduce((acc, cur) => acc + cur.total, 0);
 //Questão 18
 
 const aplicarTaxa = (taxa) => (valor) => valor + (valor * taxa);
-const aplicarICMS = aplicarTaxa(0.18);
+const aplicarICMS = aplicarTaxa(0.18); 
 const aplicarIPI = aplicarTaxa(0.05);
 
 console.log(aplicarICMS(100));
